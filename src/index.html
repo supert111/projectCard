@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webpack Starter Kit</title>
+
+    <!-- Don't forget to delete this style tag. -->
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* .intro {
+        text-align: center;
+      }
+
+      .intro h1 {
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 40px;
+      }
+
+      .intro img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      } */
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container-card">
+      <button type="button" class="close-film-card">
+        <svg style="width:30px; height:30px">
+          <use href="../src/images/sprite.svg#icon-close-1">
+        
+          </use>
+        </svg>
+      </button>
+
+      <article class="flag">
+        <img
+            src="./images/intro.png"
+            alt="{{name}}"
+            class="poster__path"
+        />
+       <h1 class="title__card__film">{{original_title}}</h1> 
+
+       <ul class="block__movie__information">
+        {{#each this}}
+          <li class="list"><span class="movie__information">Vote / Votes</span>
+            <span class="vote">{{vote_count}}</span>/
+            <span class="votes">{{vote_average}}</span></li>
+          <li class="list"><span class="movie__information">Popularity</span>{{popularity}}</li>
+          <li class="list"><span class="movie__information">Original Title</span>{{original_title}}</li>
+          {{#each genres}}
+          <li class="list"><span class="movie__information">Genre</span>{{name}}</li>
+          {{/each}}
+        {{/each}}
+       </ul>
+    </div>
+
+  </body>
+</html>
