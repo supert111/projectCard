@@ -23,7 +23,9 @@ body {
   padding-left: 0px;
   margin: 0px auto;
 }
-.container-card{
+.modal-card{
+  position: relative;
+  margin: auto;
   width: 280px;
   height: 958px;
   padding: 48px 20px 41px;
@@ -142,4 +144,22 @@ color: #000000;
   background: #FF6B01;
   border: 0;
   margin: 0 15px 0 0;
+}
+
+.icon__close{
+  width: 14px;
+  height: 14px;
+}
+.close-film-card{
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 0;
 }
